@@ -1,0 +1,46 @@
+// ============================================
+// Day 30 - Extra Examples
+// Topic: System Design Patterns
+// ============================================
+
+print("🔌 === Day 30: Extra Examples ===\n")
+
+print("🏗️ Task Scheduler Pattern:")
+print("   var tasks: [(interval: UInt32, lastRun: UInt32, action: () -> Void)]")
+print("")
+print("   tasks = [")
+print("     (5000, readSensors),    // every 5s")
+print("     (1000, updateOLED),     // every 1s")
+print("     (30000, mqttPublish),   // every 30s")
+print("     (60000, logToFlash),    // every 60s")
+print("   ]")
+print("")
+print("   while true {")
+print("     let now = millis()")
+print("     for task in tasks {")
+print("       if now - task.lastRun >= task.interval {")
+print("         task.action()")
+print("         task.lastRun = now")
+print("       }")
+print("     }")
+print("     watchdog_update()")
+print("   }")
+print("")
+
+print("🔄 Error Recovery:")
+print("   1. Sensor fail → use last known value")
+print("   2. WiFi disconnect → auto reconnect")
+print("   3. MQTT fail → queue messages locally")
+print("   4. Flash full → circular overwrite oldest")
+print("   5. Watchdog → auto reset on hang")
+print("")
+
+print("📊 Memory Budget (264KB SRAM):")
+print("   Stack:        8KB")
+print("   Heap:         32KB")
+print("   Frame buffer: 1KB (OLED)")
+print("   MQTT buffer:  2KB")
+print("   HTTP buffer:  4KB")
+print("   Sensor data:  256B")
+print("   Free:         ~216KB")
+print("")
