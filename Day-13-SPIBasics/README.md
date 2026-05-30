@@ -1,3 +1,81 @@
+# Day 13 - SPI: High-Speed Communication
+
+## 📖 Introduction
+
+SPI (Serial Peripheral Interface) is a synchronous, high-speed serial protocol. Used for OLEDs, SD Cards, LED matrices, wireless modules.
+
+---
+
+## 🎯 Key Concepts
+
+### 1. SPI vs I2C
+
+| Feature | SPI | I2C |
+|---------|-----|-----|
+| Wires | 4 (MOSI, MISO, SCK, CS) | 2 (SDA, SCL) |
+| Speed | 1-50+ MHz | 100kHz-1MHz |
+| Duplex | Full-duplex | Half-duplex |
+| Addressing | CS pin (hardware) | 7-bit address |
+| Devices | 1 CS per device | 127 max |
+
+### 2. SPI Signals
+
+```
+MOSI (Master Out, Slave In)  → Pico sends data
+MISO (Master In, Slave Out)  ← Pico receives data
+SCK  (Serial Clock)          → Clock from Pico
+CS   (Chip Select)           → LOW = active
+```
+
+### 3. SPI on RP2040
+
+| SPI | MOSI | MISO | SCK | CS |
+|-----|------|------|-----|----|
+| spi0 | GP19 | GP16 | GP18 | GP17 |
+| spi1 | GP11 | GP8 | GP10 | GP9 |
+
+### 4. Basic Code
+
+```swift
+// Init SPI0 at 1MHz
+spi_init(spi0, 1_000_000)
+gpio_set_function(18, GPIO_FUNC_SPI)  // SCK
+gpio_set_function(19, GPIO_FUNC_SPI)  // MOSI
+gpio_set_function(16, GPIO_FUNC_SPI)  // MISO
+
+// CS pin (manual control)
+gpio_init(17)
+gpio_set_dir(17, GPIO_OUT)
+gpio_put(17, true)  // CS high = inactive
+
+// Write data
+gpio_put(17, false)  // CS low = select
+var txData: [UInt8] = [0x01, 0x02, 0x03]
+spi_write_blocking(spi0, &txData, txData.count)
+gpio_put(17, true)   // CS high = deselect
+```
+
+---
+
+## 📝 Summary
+
+- SPI: 4 wires, full-duplex, high speed
+- A separate CS pin is needed for each slave
+- Master generates clock (SCK), slave synchronizes to it
+- Suitable for: displays, SD cards, high-speed sensors
+
+---
+
+## 🏋️ Challenge
+
+1. Send/receive data via SPI loopback (connect MOSI→MISO)
+2. Read chip ID from an SPI module
+3. Compare transfer speeds at different clock rates
+
+---
+
+# 🇻🇳 Phiên bản Tiếng Việt
+
 # Day 13 - SPI: Giao tiếp tốc độ cao
 
 ## 📖 Giới thiệu

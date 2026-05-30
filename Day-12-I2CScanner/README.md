@@ -1,3 +1,91 @@
+# Day 12 - I2C: Basic Communication
+
+## 📖 Introduction
+
+I2C (Inter-Integrated Circuit) is a 2-wire communication bus that allows connecting multiple devices (sensors, displays, memory) on the same bus. Very popular in embedded systems.
+
+---
+
+## 🎯 Key Concepts
+
+### 1. What is I2C?
+
+- 2 wires: **SDA** (Data) + **SCL** (Clock)
+- Master-Slave architecture (Pico = Master)
+- Each slave has a unique 7-bit address
+- Up to 127 devices on a single bus
+- Speeds: 100kHz (Standard), 400kHz (Fast), 1MHz (Fast+)
+
+### 2. I2C on RP2040
+
+| I2C | SDA | SCL |
+|-----|-----|-----|
+| i2c0 | GP4 | GP5 |
+| i2c1 | GP6 | GP7 |
+
+### 3. Wiring Diagram
+
+```
+         3.3V
+          │ │
+         [R][R]  ← Pull-up resistors (4.7kΩ)
+          │ │
+SDA ──────┼─┼──── Device 1 (SDA)──── Device 2 (SDA)
+SCL ──────┼─┼──── Device 1 (SCL)──── Device 2 (SCL)
+          │ │
+Pico GP4  │ └── Pico GP5
+```
+
+### 4. Basic Code
+
+```swift
+// Initialize I2C
+i2c_init(i2c0, 100_000)  // 100kHz
+gpio_set_function(4, GPIO_FUNC_I2C)
+gpio_set_function(5, GPIO_FUNC_I2C)
+gpio_pull_up(4)
+gpio_pull_up(5)
+
+// Write 1 byte to device
+var data: UInt8 = 0xFF
+i2c_write_blocking(i2c0, 0x3C, &data, 1, false)
+
+// Read 1 byte from device
+var result: UInt8 = 0
+i2c_read_blocking(i2c0, 0x3C, &result, 1, false)
+```
+
+### 5. Common I2C Addresses
+
+| Address | Device |
+|---------|--------|
+| 0x27/0x3F | LCD 16x2 I2C |
+| 0x3C/0x3D | SSD1306 OLED |
+| 0x48 | ADS1115 ADC |
+| 0x68 | MPU6050 IMU |
+| 0x76/0x77 | BMP280 Temperature |
+
+---
+
+## 📝 Summary
+
+- I2C: 2 wires (SDA + SCL), multiple devices on the same bus
+- Each device has a unique 7-bit address
+- Pull-up resistors (4.7kΩ) needed on SDA and SCL
+- Scanner scans all addresses to find devices
+
+---
+
+## 🏋️ Challenge
+
+1. Write an I2C scanner to list all devices on the bus
+2. Read the chip ID from an I2C sensor
+3. Connect 2+ devices on the same bus
+
+---
+
+# 🇻🇳 Phiên bản Tiếng Việt
+
 # Day 12 - I2C: Giao tiếp cơ bản
 
 ## 📖 Giới thiệu

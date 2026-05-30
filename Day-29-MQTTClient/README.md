@@ -1,5 +1,30 @@
 # Day 29 - MQTT: IoT Communication
 
+## 📖 Introduction
+MQTT is a lightweight protocol for IoT, using the Publish/Subscribe model. It is well-suited for embedded devices with low bandwidth.
+
+---
+
+## 🎯 Key Concepts
+- **Broker**: Intermediary server (e.g., Mosquitto, HiveMQ)
+- **Publisher**: Sends messages to a topic
+- **Subscriber**: Receives messages from a topic
+- **Topic**: Hierarchical path (home/room/sensor)
+- **QoS**: 0 (fire & forget), 1 (at-least-once), 2 (exactly-once)
+
+---
+
+## 🏋️ Challenge
+1. Connect to a public MQTT broker
+2. Publish temperature every 10 seconds
+3. Subscribe to receive LED control commands
+
+---
+
+# 🇻🇳 Phiên bản Tiếng Việt
+
+# Day 29 - MQTT: IoT Communication
+
 ## 📖 Giới thiệu
 MQTT là protocol nhẹ cho IoT, dùng mô hình Publish/Subscribe. Phù hợp cho thiết bị embedded với bandwidth thấp.
 

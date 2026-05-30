@@ -1,3 +1,35 @@
+# Day 27 - WiFi with Pico W: HTTP Request
+
+## 📖 Introduction
+Pico W has a CYW43439 chip supporting WiFi 802.11n. Connect to a network and send HTTP requests to fetch data from the internet.
+
+---
+
+## 🎯 Key Concepts
+- Pico W WiFi: 2.4GHz, 802.11b/g/n
+- TCP/IP stack: lwIP
+- Requires `pico_cyw43_arch_lwip_threadsafe_background`
+- Connect → DNS resolve → TCP connect → HTTP request
+
+### Code Flow
+```swift
+cyw43_arch_init()
+cyw43_arch_enable_sta_mode()
+cyw43_arch_wifi_connect_blocking(ssid, password, auth)
+// Now connected! Make HTTP requests...
+```
+
+---
+
+## 🏋️ Challenge
+1. Connect to WiFi, print IP address
+2. HTTP GET request to a REST API
+3. Parse JSON response
+
+---
+
+# 🇻🇳 Phiên bản Tiếng Việt
+
 # Day 27 - WiFi với Pico W: HTTP Request
 
 ## 📖 Giới thiệu
