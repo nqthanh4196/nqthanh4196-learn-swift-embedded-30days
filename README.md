@@ -9,7 +9,7 @@ Learn embedded programming with Swift on Raspberry Pi Pico from basic to advance
 <!-- PROGRESS_START -->
 | Day | Topic | Status |
 |-----|-------|--------|
-| 01 | Introduction to Swift Embedded & Environment Setup | ⬜ |
+| 01 | Introduction to Swift Embedded & Environment Setup | ✅ |
 | 02 | GPIO Output - Blink LED | ⬜ |
 | 03 | GPIO Input - Reading a Button | ⬜ |
 | 04 | PWM - LED Brightness Control | ⬜ |
@@ -109,7 +109,7 @@ Học lập trình Embedded bằng Swift trên Raspberry Pi Pico từ cơ bản 
 <!-- PROGRESS_START_VI -->
 | Ngày | Chủ đề | Trạng thái |
 |------|--------|------------|
-| 01 | Giới thiệu Swift Embedded & Setup môi trường | ⬜ |
+| 01 | Giới thiệu Swift Embedded & Setup môi trường | ✅ |
 | 02 | GPIO Output - Blink LED | ⬜ |
 | 03 | GPIO Input - Đọc nút nhấn | ⬜ |
 | 04 | PWM - Điều khiển độ sáng LED | ⬜ |
