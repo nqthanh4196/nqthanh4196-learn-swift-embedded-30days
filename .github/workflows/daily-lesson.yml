@@ -1,0 +1,63 @@
+name: Daily Embedded Swift Lesson
+
+on:
+  schedule:
+    - cron: '0 5 * * *'  # 12:00 PM Vietnam time (UTC+7)
+  repository_dispatch:
+    types: [daily-lesson]
+  workflow_dispatch: {}
+
+jobs:
+  publish-lesson:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Determine next day
+        id: day
+        run: |
+          CURRENT=$(ls -d Day-* 2>/dev/null | wc -l | tr -d ' ')
+          NEXT=$((CURRENT + 1))
+          echo "number=$NEXT" >> $GITHUB_OUTPUT
+          echo "padded=$(printf '%02d' $NEXT)" >> $GITHUB_OUTPUT
+
+      - name: Check if completed
+        id: check
+        run: |
+          if [ ${{ steps.day.outputs.number }} -gt 30 ]; then
+            echo "skip=true" >> $GITHUB_OUTPUT
+          elif [ ! -d "drafts/Day-${{ steps.day.outputs.padded }}" ]; then
+            echo "skip=true" >> $GITHUB_OUTPUT
+          else
+            echo "skip=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Publish lesson
+        if: steps.check.outputs.skip == 'false'
+        run: |
+          DAY=${{ steps.day.outputs.padded }}
+
+          LESSONS="HelloPico BlinkLED ButtonRead LEDDimmer TimerBlink ButtonStateMachine TrafficLight AnalogRead ServoControl MelodyPlayer SerialChat I2CScanner SPIBasics TempReader OLEDDisplay LEDMatrix DMATransfer PowerSave DataLogger PIOBlink DHTSensor DistanceMeter MotorDriver StepperControl IRRemote NeoPixelShow WiFiClient PicoWebServer MQTTClient WeatherStation"
+          PROJECT=$(echo $LESSONS | cut -d' ' -f${{ steps.day.outputs.number }})
+          FOLDER="Day-${DAY}-${PROJECT}"
+
+          cp -r "drafts/Day-${DAY}/" "$FOLDER/"
+          rm -rf "drafts/Day-${DAY}"
+
+      - name: Update progress
+        if: steps.check.outputs.skip == 'false'
+        run: |
+          chmod +x ./scripts/update-progress.sh
+          ./scripts/update-progress.sh
+
+      - name: Commit and push
+        if: steps.check.outputs.skip == 'false'
+        run: |
+          git config user.name "nqthanh4196"
+          git config user.email "nqthanh4196@users.noreply.github.com"
+          DAY=${{ steps.day.outputs.padded }}
+          git add .
+          git commit -m "📚 Day ${DAY}: New Embedded Swift lesson published"
+          git push
