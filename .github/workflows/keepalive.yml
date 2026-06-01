@@ -2,7 +2,7 @@ name: Keepalive
 
 on:
   schedule:
-    - cron: '0 0 */50 * *'
+    - cron: '0 0 */14 * *'
 
 jobs:
   keepalive:
