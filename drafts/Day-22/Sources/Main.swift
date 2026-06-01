@@ -3,8 +3,12 @@
 // Topic: Ultrasonic Sensor (HC-SR04)
 // ============================================
 
-let TRIG_PIN: UInt32 = 14
-let ECHO_PIN: UInt32 = 15
+enum Pins {
+    static let trig: UInt32 = 14
+    static let echo: UInt32 = 15
+}
+let TRIG_PIN = Pins.trig
+let ECHO_PIN = Pins.echo
 
 print("🔌 === Day 22: Ultrasonic Distance (HC-SR04) ===")
 print("📌 Trig: GP\(TRIG_PIN), Echo: GP\(ECHO_PIN)")

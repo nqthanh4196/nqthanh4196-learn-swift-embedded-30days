@@ -4,8 +4,12 @@
 // ============================================
 
 // MARK: - Pin Configuration
-let LED_PIN: UInt32 = 25      // Onboard LED
-let BUTTON_PIN: UInt32 = 14   // Button on GP14
+enum Pins {
+    static let led: UInt32 = 25
+    static let button: UInt32 = 14
+}
+let LED_PIN = Pins.led
+let BUTTON_PIN = Pins.button
 
 // MARK: - Setup
 // stdio_init_all()
@@ -21,6 +25,7 @@ let BUTTON_PIN: UInt32 = 14   // Button on GP14
 var ledState = false
 var pressCount = 0
 var lastButtonState = false
+_ = ledState; _ = pressCount; _ = lastButtonState  // Used in hardware code
 
 /// Đọc trạng thái button (mô phỏng)
 func readButton() -> Bool {

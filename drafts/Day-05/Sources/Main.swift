@@ -4,8 +4,12 @@
 // ============================================
 
 // MARK: - Pin Configuration
-let LED_PIN: UInt32 = 25
-let BUTTON_PIN: UInt32 = 14
+enum Pins {
+    static let led: UInt32 = 25
+    static let button: UInt32 = 14
+}
+let LED_PIN = Pins.led
+let BUTTON_PIN = Pins.button
 
 // MARK: - State Variables
 var ledState = false

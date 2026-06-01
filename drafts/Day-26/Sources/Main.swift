@@ -3,7 +3,10 @@
 // Topic: WS2812B NeoPixel LED Strip
 // ============================================
 
-let NEOPIXEL_PIN: UInt32 = 28
+enum Pins {
+    static let neopixel: UInt32 = 28
+}
+let NEOPIXEL_PIN = Pins.neopixel
 let NUM_LEDS: Int = 8
 
 print("🔌 === Day 26: NeoPixel (WS2812B) ===")

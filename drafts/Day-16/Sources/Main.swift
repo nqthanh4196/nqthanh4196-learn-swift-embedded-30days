@@ -4,7 +4,10 @@
 // ============================================
 
 // MARK: - Configuration
-let CS_PIN: UInt32 = 17
+enum Pins {
+    static let cs: UInt32 = 17
+}
+let CS_PIN = Pins.cs
 let MAX7219_DECODE: UInt8 = 0x09
 let MAX7219_INTENSITY: UInt8 = 0x0A
 let MAX7219_SCANLIMIT: UInt8 = 0x0B

@@ -4,11 +4,17 @@
 // ============================================
 
 // MARK: - Configuration
+enum Pins {
+    static let sck: UInt32 = 18
+    static let mosi: UInt32 = 19
+    static let miso: UInt32 = 16
+    static let cs: UInt32 = 17
+}
 let SPI_PORT = 0   // spi0
-let SCK_PIN: UInt32 = 18
-let MOSI_PIN: UInt32 = 19
-let MISO_PIN: UInt32 = 16
-let CS_PIN: UInt32 = 17
+let SCK_PIN = Pins.sck
+let MOSI_PIN = Pins.mosi
+let MISO_PIN = Pins.miso
+let CS_PIN = Pins.cs
 let SPI_FREQ: UInt32 = 1_000_000  // 1 MHz
 
 // MARK: - SPI Helper Functions

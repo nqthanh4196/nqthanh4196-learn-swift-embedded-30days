@@ -16,7 +16,10 @@
 // stdio_init_all()  // Khởi tạo UART/USB cho debug output
 
 // MARK: - 2. Cấu hình GPIO cho onboard LED (GP25)
-let LED_PIN: UInt32 = 25
+enum Pins {
+    static let led: UInt32 = 25
+}
+let LED_PIN = Pins.led
 
 // gpio_init(LED_PIN)
 // gpio_set_dir(LED_PIN, GPIO_OUT)

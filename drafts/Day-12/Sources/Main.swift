@@ -4,9 +4,13 @@
 // ============================================
 
 // MARK: - Configuration
+enum Pins {
+    static let sda: UInt32 = 4
+    static let scl: UInt32 = 5
+}
 let I2C_PORT = 0  // i2c0
-let SDA_PIN: UInt32 = 4  // GP4
-let SCL_PIN: UInt32 = 5  // GP5
+let SDA_PIN = Pins.sda
+let SCL_PIN = Pins.scl
 let I2C_FREQ: UInt32 = 100_000  // 100kHz (Standard mode)
 
 // MARK: - Setup

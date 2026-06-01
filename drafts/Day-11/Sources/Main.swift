@@ -4,10 +4,14 @@
 // ============================================
 
 // MARK: - Configuration
+enum Pins {
+    static let tx: UInt32 = 0
+    static let rx: UInt32 = 1
+}
 let UART_ID = 0  // uart0
 let BAUD_RATE: UInt32 = 115200
-let TX_PIN: UInt32 = 0   // GP0
-let RX_PIN: UInt32 = 1   // GP1
+let TX_PIN = Pins.tx
+let RX_PIN = Pins.rx
 
 // MARK: - Setup
 // uart_init(uart0, BAUD_RATE)

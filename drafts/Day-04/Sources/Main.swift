@@ -4,7 +4,10 @@
 // ============================================
 
 // MARK: - Pin Configuration
-let LED_PIN: UInt32 = 15     // PWM output to LED
+enum Pins {
+    static let led: UInt32 = 15
+}
+let LED_PIN = Pins.led
 let PWM_WRAP: UInt16 = 65535 // 16-bit resolution
 
 // MARK: - Setup PWM
@@ -93,6 +96,18 @@ func breathing(cycles: Int) {
 }
 
 // MARK: - 5. Gamma correction (mắt người nhìn phi tuyến)
+/// Custom pow() for Embedded Swift (no Foundation)
+func pow(_ base: Float, _ exp: Float) -> Float {
+    // exp(exp * log(base)) approximation using repeated multiplication
+    guard base > 0 else { return 0 }
+    let intExp = Int(exp)
+    var result: Float = 1.0
+    for _ in 0..<intExp { result *= base }
+    let frac = exp - Float(intExp)
+    if frac > 0 { result *= 1.0 + frac * (base - 1.0) }  // Linear interpolation for fractional part
+    return result
+}
+
 func gammaCorrection() {
     print("🎨 Gamma Correction (perceived brightness):")
     print("   Linear vs Gamma-corrected:")

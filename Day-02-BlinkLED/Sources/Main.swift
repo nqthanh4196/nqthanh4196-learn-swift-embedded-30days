@@ -4,8 +4,12 @@
 // ============================================
 
 // MARK: - Hardware Configuration
-let LED_PIN: UInt32 = 25       // Onboard LED (Pico)
-let EXTERNAL_LED: UInt32 = 15  // External LED on GP15
+enum Pins {
+    static let led: UInt32 = 25
+    static let externalLed: UInt32 = 15
+}
+let LED_PIN = Pins.led
+let EXTERNAL_LED = Pins.externalLed
 
 // MARK: - 1. Khởi tạo hệ thống
 // stdio_init_all()
@@ -40,6 +44,7 @@ func blinkSOS(pin: UInt32) {
     let dashMs: UInt32 = 600
     let gapMs: UInt32 = 200
     let letterGap: UInt32 = 600
+    _ = dotMs; _ = dashMs; _ = gapMs; _ = letterGap  // Used in hardware code
     
     print("🆘 SOS Pattern (··· ─── ···):")
     

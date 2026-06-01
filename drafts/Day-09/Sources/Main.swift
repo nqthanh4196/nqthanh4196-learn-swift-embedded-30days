@@ -4,8 +4,12 @@
 // ============================================
 
 // MARK: - Servo Configuration
-let SERVO_PIN: UInt32 = 15
-let POT_PIN: UInt32 = 26       // ADC0 - Potentiometer
+enum Pins {
+    static let servo: UInt32 = 15
+    static let pot: UInt32 = 26
+}
+let SERVO_PIN = Pins.servo
+let POT_PIN = Pins.pot
 
 /// Servo SG90 specifications:
 /// - PWM frequency: 50Hz (period = 20ms)

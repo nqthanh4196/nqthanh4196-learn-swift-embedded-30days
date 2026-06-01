@@ -4,10 +4,16 @@
 // ============================================
 
 // MARK: - Pin Configuration
-let RED_LED: UInt32 = 13
-let YELLOW_LED: UInt32 = 14
-let GREEN_LED: UInt32 = 15
-let PEDESTRIAN_BUTTON: UInt32 = 16
+enum Pins {
+    static let redLed: UInt32 = 13
+    static let yellowLed: UInt32 = 14
+    static let greenLed: UInt32 = 15
+    static let pedestrianButton: UInt32 = 16
+}
+let RED_LED = Pins.redLed
+let YELLOW_LED = Pins.yellowLed
+let GREEN_LED = Pins.greenLed
+let PEDESTRIAN_BUTTON = Pins.pedestrianButton
 
 // MARK: - Traffic Light State Machine
 enum TrafficState: String {

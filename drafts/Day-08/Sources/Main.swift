@@ -4,8 +4,12 @@
 // ============================================
 
 // MARK: - Pin Configuration
-let ADC_PIN: UInt32 = 26      // GP26 = ADC0
-let LED_PIN: UInt32 = 15      // PWM output
+enum Pins {
+    static let adc: UInt32 = 26
+    static let led: UInt32 = 15
+}
+let ADC_PIN = Pins.adc
+let LED_PIN = Pins.led
 let ADC_MAX: UInt16 = 4095    // 12-bit resolution (0-4095)
 let VREF: Float = 3.3         // Reference voltage
 

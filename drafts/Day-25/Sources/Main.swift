@@ -3,7 +3,10 @@
 // Topic: IR Remote Control (NEC Protocol)
 // ============================================
 
-let IR_PIN: UInt32 = 15
+enum Pins {
+    static let ir: UInt32 = 15
+}
+let IR_PIN = Pins.ir
 
 print("🔌 === Day 25: IR Remote Control ===")
 print("📌 IR Receiver: GP\(IR_PIN)")

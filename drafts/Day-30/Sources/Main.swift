@@ -33,6 +33,17 @@ struct WeatherConfig {
 }
 
 // MARK: - Sensor Data
+/// Custom pow() for Embedded Swift (no Foundation)
+func pow(_ base: Float, _ exp: Float) -> Float {
+    guard base > 0 else { return 0 }
+    let intExp = Int(exp)
+    var result: Float = 1.0
+    for _ in 0..<intExp { result *= base }
+    let frac = exp - Float(intExp)
+    if frac > 0 { result *= 1.0 + frac * (base - 1.0) }
+    return result
+}
+
 struct SensorData {
     var temperature: Float = 0
     var humidity: Float = 0

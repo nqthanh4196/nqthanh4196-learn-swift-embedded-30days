@@ -3,7 +3,10 @@
 // Topic: DHT22 - Temperature & Humidity
 // ============================================
 
-let DHT_PIN: UInt32 = 15
+enum Pins {
+    static let dht: UInt32 = 15
+}
+let DHT_PIN = Pins.dht
 
 print("🔌 === Day 21: DHT22 Sensor ===")
 print("📌 Data Pin: GP\(DHT_PIN) (with 10kΩ pull-up)")

@@ -15,8 +15,23 @@ let REG_TEMP_MSB: UInt8 = 0xFA
 let REG_PRESS_MSB: UInt8 = 0xF7
 
 // MARK: - I2C Setup
-let SDA_PIN: UInt32 = 4
-let SCL_PIN: UInt32 = 5
+enum Pins {
+    static let sda: UInt32 = 4
+    static let scl: UInt32 = 5
+}
+let SDA_PIN = Pins.sda
+
+/// Custom pow() for Embedded Swift (no Foundation)
+func pow(_ base: Double, _ exp: Double) -> Double {
+    guard base > 0 else { return 0 }
+    let intExp = Int(exp)
+    var result: Double = 1.0
+    for _ in 0..<intExp { result *= base }
+    let frac = exp - Double(intExp)
+    if frac > 0 { result *= 1.0 + frac * (base - 1.0) }
+    return result
+}
+let SCL_PIN = Pins.scl
 
 // MARK: - BMP280 Functions
 

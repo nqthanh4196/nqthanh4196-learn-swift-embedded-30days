@@ -3,9 +3,14 @@
 // Topic: DC Motor & H-Bridge (L298N)
 // ============================================
 
-let IN1: UInt32 = 14
-let IN2: UInt32 = 15
-let ENA: UInt32 = 13  // PWM speed control
+enum Pins {
+    static let in1: UInt32 = 14
+    static let in2: UInt32 = 15
+    static let ena: UInt32 = 13
+}
+let IN1 = Pins.in1
+let IN2 = Pins.in2
+let ENA = Pins.ena
 
 print("🔌 === Day 23: DC Motor (L298N) ===")
 print("📌 IN1=GP\(IN1), IN2=GP\(IN2), ENA=GP\(ENA)(PWM)")

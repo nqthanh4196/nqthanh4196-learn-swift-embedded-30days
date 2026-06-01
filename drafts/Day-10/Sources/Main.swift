@@ -4,7 +4,10 @@
 // ============================================
 
 // MARK: - Pin Configuration
-let BUZZER_PIN: UInt32 = 15  // Passive buzzer on GP15 (PWM)
+enum Pins {
+    static let buzzer: UInt32 = 15
+}
+let BUZZER_PIN = Pins.buzzer
 
 // MARK: - Music Notes (Frequency in Hz)
 struct Note {

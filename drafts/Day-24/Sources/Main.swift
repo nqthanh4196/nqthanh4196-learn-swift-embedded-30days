@@ -3,7 +3,10 @@
 // Topic: Stepper Motor (28BYJ-48 + ULN2003)
 // ============================================
 
-let STEPPER_PINS: [UInt32] = [10, 11, 12, 13]
+enum Pins {
+    static let stepper: [UInt32] = [10, 11, 12, 13]
+}
+let STEPPER_PINS = Pins.stepper
 let STEPS_PER_REV: Int = 2048
 
 print("🔌 === Day 24: Stepper Motor ===")
