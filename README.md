@@ -13,7 +13,7 @@ Learn embedded programming with Swift on Raspberry Pi Pico from basic to advance
 | 02 | GPIO Output - Blink LED | ✅ |
 | 03 | GPIO Input - Reading a Button | ✅ |
 | 04 | PWM - LED Brightness Control | ✅ |
-| 05 | Timer & Interrupts | ⬜ |
+| 05 | Timer & Interrupts | ✅ |
 | 06 | Debounce Button & State Machine | ⬜ |
 | 07 | Multiple LEDs - Traffic Light | ⬜ |
 | 08 | Analog Input (ADC) - Reading Sensors | ⬜ |
@@ -113,7 +113,7 @@ Học lập trình Embedded bằng Swift trên Raspberry Pi Pico từ cơ bản 
 | 02 | GPIO Output - Blink LED | ✅ |
 | 03 | GPIO Input - Đọc nút nhấn | ✅ |
 | 04 | PWM - Điều khiển độ sáng LED | ✅ |
-| 05 | Timer & Interrupts | ⬜ |
+| 05 | Timer & Interrupts | ✅ |
 | 06 | Debounce Button & State Machine | ⬜ |
 | 07 | Multiple LEDs - Traffic Light | ⬜ |
 | 08 | Analog Input (ADC) - Đọc cảm biến | ⬜ |
