@@ -16,7 +16,7 @@ Learn embedded programming with Swift on Raspberry Pi Pico from basic to advance
 | 05 | Timer & Interrupts | ✅ |
 | 06 | Debounce Button & State Machine | ✅ |
 | 07 | Multiple LEDs - Traffic Light | ✅ |
-| 08 | Analog Input (ADC) - Reading Sensors | ⬜ |
+| 08 | Analog Input (ADC) - Reading Sensors | ✅ |
 | 09 | Advanced PWM - Servo Motor | ⬜ |
 | 10 | Buzzer - Playing Sounds | ⬜ |
 | 11 | UART - Serial Communication | ⬜ |
@@ -116,7 +116,7 @@ Học lập trình Embedded bằng Swift trên Raspberry Pi Pico từ cơ bản 
 | 05 | Timer & Interrupts | ✅ |
 | 06 | Debounce Button & State Machine | ✅ |
 | 07 | Multiple LEDs - Traffic Light | ✅ |
-| 08 | Analog Input (ADC) - Đọc cảm biến | ⬜ |
+| 08 | Analog Input (ADC) - Đọc cảm biến | ✅ |
 | 09 | PWM nâng cao - Servo Motor | ⬜ |
 | 10 | Buzzer - Phát âm thanh | ⬜ |
 | 11 | UART - Giao tiếp Serial | ⬜ |
