@@ -18,7 +18,7 @@ Learn embedded programming with Swift on Raspberry Pi Pico from basic to advance
 | 07 | Multiple LEDs - Traffic Light | ✅ |
 | 08 | Analog Input (ADC) - Reading Sensors | ✅ |
 | 09 | Advanced PWM - Servo Motor | ✅ |
-| 10 | Buzzer - Playing Sounds | ⬜ |
+| 10 | Buzzer - Playing Sounds | ✅ |
 | 11 | UART - Serial Communication | ⬜ |
 | 12 | I2C - Basic Communication | ⬜ |
 | 13 | SPI - High-Speed Communication | ⬜ |
@@ -118,7 +118,7 @@ Học lập trình Embedded bằng Swift trên Raspberry Pi Pico từ cơ bản 
 | 07 | Multiple LEDs - Traffic Light | ✅ |
 | 08 | Analog Input (ADC) - Đọc cảm biến | ✅ |
 | 09 | PWM nâng cao - Servo Motor | ✅ |
-| 10 | Buzzer - Phát âm thanh | ⬜ |
+| 10 | Buzzer - Phát âm thanh | ✅ |
 | 11 | UART - Giao tiếp Serial | ⬜ |
 | 12 | I2C - Giao tiếp cơ bản | ⬜ |
 | 13 | SPI - Giao tiếp tốc độ cao | ⬜ |
