@@ -23,7 +23,7 @@ Learn embedded programming with Swift on Raspberry Pi Pico from basic to advance
 | 12 | I2C - Basic Communication | ✅ |
 | 13 | SPI - High-Speed Communication | ✅ |
 | 14 | I2C - Temperature Sensor (BMP280) | ✅ |
-| 15 | I2C - OLED Display (SSD1306) | ⬜ |
+| 15 | I2C - OLED Display (SSD1306) | ✅ |
 | 16 | SPI - LED Matrix (MAX7219) | ⬜ |
 | 17 | DMA - Direct Memory Access | ⬜ |
 | 18 | Watchdog Timer & Power Management | ⬜ |
@@ -123,7 +123,7 @@ Học lập trình Embedded bằng Swift trên Raspberry Pi Pico từ cơ bản 
 | 12 | I2C - Giao tiếp cơ bản | ✅ |
 | 13 | SPI - Giao tiếp tốc độ cao | ✅ |
 | 14 | I2C - Đọc cảm biến nhiệt độ (BMP280) | ✅ |
-| 15 | I2C - OLED Display (SSD1306) | ⬜ |
+| 15 | I2C - OLED Display (SSD1306) | ✅ |
 | 16 | SPI - LED Matrix (MAX7219) | ⬜ |
 | 17 | DMA - Direct Memory Access | ⬜ |
 | 18 | Watchdog Timer & Power Management | ⬜ |
