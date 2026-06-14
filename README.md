@@ -25,7 +25,7 @@ Learn embedded programming with Swift on Raspberry Pi Pico from basic to advance
 | 14 | I2C - Temperature Sensor (BMP280) | ✅ |
 | 15 | I2C - OLED Display (SSD1306) | ✅ |
 | 16 | SPI - LED Matrix (MAX7219) | ✅ |
-| 17 | DMA - Direct Memory Access | ⬜ |
+| 17 | DMA - Direct Memory Access | ✅ |
 | 18 | Watchdog Timer & Power Management | ⬜ |
 | 19 | Flash Storage - Data Persistence | ⬜ |
 | 20 | PIO - Programmable I/O | ⬜ |
@@ -125,7 +125,7 @@ Học lập trình Embedded bằng Swift trên Raspberry Pi Pico từ cơ bản 
 | 14 | I2C - Đọc cảm biến nhiệt độ (BMP280) | ✅ |
 | 15 | I2C - OLED Display (SSD1306) | ✅ |
 | 16 | SPI - LED Matrix (MAX7219) | ✅ |
-| 17 | DMA - Direct Memory Access | ⬜ |
+| 17 | DMA - Direct Memory Access | ✅ |
 | 18 | Watchdog Timer & Power Management | ⬜ |
 | 19 | Flash Storage - Lưu dữ liệu | ⬜ |
 | 20 | PIO - Programmable I/O | ⬜ |
