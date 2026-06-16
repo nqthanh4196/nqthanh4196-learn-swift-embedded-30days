@@ -27,7 +27,7 @@ Learn embedded programming with Swift on Raspberry Pi Pico from basic to advance
 | 16 | SPI - LED Matrix (MAX7219) | ✅ |
 | 17 | DMA - Direct Memory Access | ✅ |
 | 18 | Watchdog Timer & Power Management | ✅ |
-| 19 | Flash Storage - Data Persistence | ⬜ |
+| 19 | Flash Storage - Data Persistence | ✅ |
 | 20 | PIO - Programmable I/O | ⬜ |
 | 21 | DHT22 - Temperature & Humidity Sensor | ⬜ |
 | 22 | Ultrasonic Sensor (HC-SR04) | ⬜ |
@@ -127,7 +127,7 @@ Học lập trình Embedded bằng Swift trên Raspberry Pi Pico từ cơ bản 
 | 16 | SPI - LED Matrix (MAX7219) | ✅ |
 | 17 | DMA - Direct Memory Access | ✅ |
 | 18 | Watchdog Timer & Power Management | ✅ |
-| 19 | Flash Storage - Lưu dữ liệu | ⬜ |
+| 19 | Flash Storage - Lưu dữ liệu | ✅ |
 | 20 | PIO - Programmable I/O | ⬜ |
 | 21 | DHT22 - Cảm biến nhiệt độ & độ ẩm | ⬜ |
 | 22 | Ultrasonic Sensor (HC-SR04) | ⬜ |
