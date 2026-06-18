@@ -29,7 +29,7 @@ Learn embedded programming with Swift on Raspberry Pi Pico from basic to advance
 | 18 | Watchdog Timer & Power Management | ✅ |
 | 19 | Flash Storage - Data Persistence | ✅ |
 | 20 | PIO - Programmable I/O | ✅ |
-| 21 | DHT22 - Temperature & Humidity Sensor | ⬜ |
+| 21 | DHT22 - Temperature & Humidity Sensor | ✅ |
 | 22 | Ultrasonic Sensor (HC-SR04) | ⬜ |
 | 23 | DC Motor & H-Bridge (L298N) | ⬜ |
 | 24 | Stepper Motor (28BYJ-48) | ⬜ |
@@ -129,7 +129,7 @@ Học lập trình Embedded bằng Swift trên Raspberry Pi Pico từ cơ bản 
 | 18 | Watchdog Timer & Power Management | ✅ |
 | 19 | Flash Storage - Lưu dữ liệu | ✅ |
 | 20 | PIO - Programmable I/O | ✅ |
-| 21 | DHT22 - Cảm biến nhiệt độ & độ ẩm | ⬜ |
+| 21 | DHT22 - Cảm biến nhiệt độ & độ ẩm | ✅ |
 | 22 | Ultrasonic Sensor (HC-SR04) | ⬜ |
 | 23 | DC Motor & H-Bridge (L298N) | ⬜ |
 | 24 | Stepper Motor (28BYJ-48) | ⬜ |
