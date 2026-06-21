@@ -32,7 +32,7 @@ Learn embedded programming with Swift on Raspberry Pi Pico from basic to advance
 | 21 | DHT22 - Temperature & Humidity Sensor | ✅ |
 | 22 | Ultrasonic Sensor (HC-SR04) | ✅ |
 | 23 | DC Motor & H-Bridge (L298N) | ✅ |
-| 24 | Stepper Motor (28BYJ-48) | ⬜ |
+| 24 | Stepper Motor (28BYJ-48) | ✅ |
 | 25 | IR Remote Control | ⬜ |
 | 26 | NeoPixel LED Strip (WS2812B) | ⬜ |
 | 27 | WiFi with Pico W - HTTP Request | ⬜ |
@@ -132,7 +132,7 @@ Học lập trình Embedded bằng Swift trên Raspberry Pi Pico từ cơ bản 
 | 21 | DHT22 - Cảm biến nhiệt độ & độ ẩm | ✅ |
 | 22 | Ultrasonic Sensor (HC-SR04) | ✅ |
 | 23 | DC Motor & H-Bridge (L298N) | ✅ |
-| 24 | Stepper Motor (28BYJ-48) | ⬜ |
+| 24 | Stepper Motor (28BYJ-48) | ✅ |
 | 25 | IR Remote Control | ⬜ |
 | 26 | NeoPixel LED Strip (WS2812B) | ⬜ |
 | 27 | WiFi với Pico W - HTTP Request | ⬜ |
