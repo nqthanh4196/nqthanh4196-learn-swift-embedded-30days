@@ -33,7 +33,7 @@ Learn embedded programming with Swift on Raspberry Pi Pico from basic to advance
 | 22 | Ultrasonic Sensor (HC-SR04) | ✅ |
 | 23 | DC Motor & H-Bridge (L298N) | ✅ |
 | 24 | Stepper Motor (28BYJ-48) | ✅ |
-| 25 | IR Remote Control | ⬜ |
+| 25 | IR Remote Control | ✅ |
 | 26 | NeoPixel LED Strip (WS2812B) | ⬜ |
 | 27 | WiFi with Pico W - HTTP Request | ⬜ |
 | 28 | WiFi - Web Server on Pico W | ⬜ |
@@ -133,7 +133,7 @@ Học lập trình Embedded bằng Swift trên Raspberry Pi Pico từ cơ bản 
 | 22 | Ultrasonic Sensor (HC-SR04) | ✅ |
 | 23 | DC Motor & H-Bridge (L298N) | ✅ |
 | 24 | Stepper Motor (28BYJ-48) | ✅ |
-| 25 | IR Remote Control | ⬜ |
+| 25 | IR Remote Control | ✅ |
 | 26 | NeoPixel LED Strip (WS2812B) | ⬜ |
 | 27 | WiFi với Pico W - HTTP Request | ⬜ |
 | 28 | WiFi - Web Server trên Pico W | ⬜ |
