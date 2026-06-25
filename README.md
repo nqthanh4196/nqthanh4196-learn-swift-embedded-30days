@@ -36,7 +36,7 @@ Learn embedded programming with Swift on Raspberry Pi Pico from basic to advance
 | 25 | IR Remote Control | ✅ |
 | 26 | NeoPixel LED Strip (WS2812B) | ✅ |
 | 27 | WiFi with Pico W - HTTP Request | ✅ |
-| 28 | WiFi - Web Server on Pico W | ⬜ |
+| 28 | WiFi - Web Server on Pico W | ✅ |
 | 29 | MQTT - IoT Communication | ⬜ |
 | 30 | Final Project - IoT Weather Station | ⬜ |
 <!-- PROGRESS_END -->
@@ -136,7 +136,7 @@ Học lập trình Embedded bằng Swift trên Raspberry Pi Pico từ cơ bản 
 | 25 | IR Remote Control | ✅ |
 | 26 | NeoPixel LED Strip (WS2812B) | ✅ |
 | 27 | WiFi với Pico W - HTTP Request | ✅ |
-| 28 | WiFi - Web Server trên Pico W | ⬜ |
+| 28 | WiFi - Web Server trên Pico W | ✅ |
 | 29 | MQTT - IoT Communication | ⬜ |
 | 30 | Final Project - Weather Station IoT | ⬜ |
 <!-- PROGRESS_END_VI -->
