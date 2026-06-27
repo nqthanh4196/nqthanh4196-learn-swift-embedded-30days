@@ -38,7 +38,7 @@ Learn embedded programming with Swift on Raspberry Pi Pico from basic to advance
 | 27 | WiFi with Pico W - HTTP Request | ✅ |
 | 28 | WiFi - Web Server on Pico W | ✅ |
 | 29 | MQTT - IoT Communication | ✅ |
-| 30 | Final Project - IoT Weather Station | ⬜ |
+| 30 | Final Project - IoT Weather Station | ✅ |
 <!-- PROGRESS_END -->
 
 ## 📁 Structure
@@ -138,7 +138,7 @@ Học lập trình Embedded bằng Swift trên Raspberry Pi Pico từ cơ bản 
 | 27 | WiFi với Pico W - HTTP Request | ✅ |
 | 28 | WiFi - Web Server trên Pico W | ✅ |
 | 29 | MQTT - IoT Communication | ✅ |
-| 30 | Final Project - Weather Station IoT | ⬜ |
+| 30 | Final Project - Weather Station IoT | ✅ |
 <!-- PROGRESS_END_VI -->
 
 ## 📁 Cấu trúc
